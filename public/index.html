@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <!-- Latest compiled and minified jQuery -->
+  <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <!-- Angular (minified) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular-route.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular-cookies.js"></script>
+
+  <!--Controllers for this page/app -->
+  <script src="javascripts/controller.js"></script>
+  <!-- Local styles -->
+  <link rel="stylesheet" href="assets3/css/main.css" />
+
+</head>
+
+  <body>
+    <div ng-app="xbeedata" ng-controller="xbee">
+      <!-- Main Temp Display -->
+      <div id="wrapper">
+        <header id="header">
+          <div class="content">
+            <div class="inner">
+              <h1>Xbee Temperatures</h1>
+                <nav>
+                  <ul>
+                    <li> Xbee1: {{xbee1}} F </li>
+                    <li> Xbee2: {{xbee2}} F </li>
+                    <li> Xbee3: {{xbee3}} F </li>
+                    <li> Xbee4: {{xbee4}} F </li>
+                    <li> Xbee5: {{xbee5}} F </li>
+                  </ul>
+                </nav>
+                <br>
+                <p> Above are the live temperature readings by the XBEES </p>
+              <!--<button ng-click="testTimer()">Chagne Value!</button>-->
+            </div>
+          </div>
+        </header>
+
+
+        <!-- Xbee1 Live Display -->
+
+        <br><br>
+        <header id="header">
+          <div class="content">
+            <div class="inner">
+              <h1>Xbee 1</h1>
+                <div ng-controller="canvas" ng-init="loading();">
+                  <div id="xbee1" style="height: 300px; width:800px;"></div>
+                </div>
+              <p> Above is the Live temp of Xbee 1</p>
+            </div>
+          </div>
+        </header>
+
+        <!-- Xbee2 Live Display -->
+
+        <br><br>
+        <header id="header">
+          <div class="content">
+            <div class="inner">
+              <h1>Xbee 2</h1>
+                <div ng-controller="canvas" ng-init="loading2();">
+                  <div id="xbee2" style="height: 300px; width:800px;"></div>
+                </div>
+              <p> Above is the Live temp of Xbee 2</p>
+            </div>
+          </div>
+        </header>
+
+        <!-- Xbee3 Live Display -->
+
+        <br><br>
+        <header id="header">
+          <div class="content">
+            <div class="inner">
+              <h1>Xbee 3</h1>
+                <div ng-controller="canvas" ng-init="loading3();">
+                  <div id="xbee3" style="height: 300px; width:800px;"></div>
+                </div>
+              <p> Above is the Live temp of Xbee 3</p>
+            </div>
+          </div>
+        </header>
+
+        <!-- Xbee4 Live Display -->
+
+        <br><br>
+        <header id="header">
+          <div class="content">
+            <div class="inner">
+              <h1>Xbee 4</h1>
+                <div ng-controller="canvas" ng-init="loading4();">
+                  <div id="xbee4" style="height: 300px; width:800px;"></div>
+                </div>
+              <p> Above is the Live temp of Xbee 4</p>
+            </div>
+          </div>
+        </header>
+
+        <!-- Xbee5 Live Display -->
+
+        <br><br>
+        <header id="header">
+          <div class="content">
+            <div class="inner">
+              <h1>Xbee 5</h1>
+                <div ng-controller="canvas" ng-init="loading5();">
+                  <div id="xbee5" style="height: 300px; width:800px;"></div>
+                </div>
+              <p> Above is the Live temp of Xbee 5</p>
+            </div>
+          </div>
+        </header>
+
+
+
+
+
+
+        <!-- Footer -->
+        <footer id="footer">
+          <p class="copyright">&copy; Anthony Pasquariello | Brian Kim | Jade Dhangwattanotai | Paul Ngouchet | ENG EC 544 </p>
+        </footer>
+
+      </div>
+
+      <!-- BG -->
+      <div id="bg"></div>
+
+    </div>
+
+  </body>
+
+    <!-- Scripts -->
+    <script src="assets3/js/jquery.min.js"></script>
+    <script src="assets3/js/skel.min.js"></script>
+    <script src="assets3/js/util.js"></script>
+    <script src="assets3/js/main.js"></script>
+
+</html>
