@@ -3,4 +3,4 @@ This repo uses mongoose-formatted MongoDB to store Arduino ID, tempearture value
 ## Running
 To run, first clone the repo and install the Node componenets. Start mongoDB with `mongod&`, then run the app with `npm start`.
 ## Demo
-The demo of the project is included in the mp4 file 
+The demo of the project is included in the mp4 file.  
