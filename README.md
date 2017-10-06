@@ -1,8 +1,6 @@
-# BUCS MEAN
-this is the code that we looked during our faculty lecture on dogfooding. Note that to run this yourself you'll need to install the various dependencies in node_modules; they can be installed via `npm install`.
-## Passport
-This branch is set up for local auth using Passport.js
+# Mean Stack Approach to EC544 
+This repo uses mongoose-formatted MongoDB to store Arduino ID, tempearture values, and time of recording read from Xbee connection to display the temperatures in live view and historical view. Front-end is rendered using AngularJS. Note that to run this repo yourself, you'll need to install various dependencies in node_modules; they can be installed via `npm install`.
 ## Running
 To run, first clone the repo and install the Node componenets. Start mongoDB with `mongod&`, then run the app with `npm start`.
-## Slides
-The original slide set accompanying the talk are in the `docs` folder in PDF.
+## Demo
+The demo of the project is included in the mp4 file 
